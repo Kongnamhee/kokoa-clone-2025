@@ -1,3 +1,16 @@
 .nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav div {
+    width: 33%;
+}
+
+.nav div:nth-child(2) {
+    text-align: center;
+}
+.nav div:last-child {
+    
 }
