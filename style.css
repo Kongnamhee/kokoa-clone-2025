@@ -1,2 +1,6 @@
 @import "components/nav.css";
 @import "reset.css";
+
+body {
+    margin: 10px;
+}
