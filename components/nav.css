@@ -1,16 +1,30 @@
+body {
+    height: 300vh;
+}
 .nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+    position: fixed;    /* 이 부분에서 margin조정 다시 연습!! */
+    width: 100%;
+    margin-top: 10px;
+
+}
 .nav div {
     width: 33%;
 }
-
 .nav div:nth-child(2) {
     text-align: center;
 }
 .nav div:last-child {
-    
+    display: flex;  /* 이거 안 해서, 안 나옴 */
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav div:first-child span {
+    margin-right: 4px;
+}
+.nav div:last-child span {
+    margin-left: 4px;
 }
