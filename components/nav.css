@@ -7,12 +7,12 @@ body {
     align-items: center;
 
     position: fixed;    /* 이 부분에서 margin조정 다시 연습!! */
+    top: 0;
     width: 100%;
-    margin-top: 10px;
-
+    margin: 10px 0px;
 }
 .nav div {
-    width: 33%;
+    width: 33%; /* % : 부모 가로값을 기준으로 (계산됨)나누어짐. */
 }
 .nav div:nth-child(2) {
     text-align: center;
@@ -23,8 +23,14 @@ body {
     align-items: center;
 }
 .nav div:first-child span {
-    margin-right: 4px;
+    margin-right: 5px;
 }
 .nav div:last-child span {
-    margin-left: 4px;
+    margin-left: 5px;
+}
+.nav div:last-child {
+    margin-right: 5px;  /* 이걸 써서, 전기 이모지가 왼쪽으로 더 이동되게 가능 */
+}
+.nav div:nth-child(2) {
+    font-size: 18px;
 }
