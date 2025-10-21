@@ -1,0 +1,50 @@
+.greeting {
+    position: absolute; /* 부모 = body (relative 안 쓰면 부모 = body) ?? */
+    top: 120px;
+    width: 100%;    /* 이거 안 쓰면 요소 길이는 인라인 요소처럼 차지부피만! */
+}
+.greeting-title {
+    font-size: 25px;
+    text-align: center; /* 이 속성은 블록 요소 내의 인라인 요소(->글씨) 가운데 정렬 */
+}
+.greeting span {
+    display: block; 
+    margin-top: 50px;   /* 인라인 요소: 왼오른 마진은 갖지만, 위아래 마진은 x */
+    text-align: center; 
+    opacity: 0.5;
+    font-size: 17px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* (기본값)주축: flex-start, 교차축: stretch */
+    position: absolute;
+    top: 300px;
+    width: 100%;
+}
+
+form input,
+form button {
+    padding: 10px 10px;
+    margin: 0px 10px;
+    border: none;
+}
+form input {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+form button {
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+form a {
+    display: block; /* 위에 마진값 주기 위해 block으로 설정 */
+    text-align: center;
+    margin-top: 12px;   
+    font-size: 15px;
+    color: inherit;
+    text-decoration: none;
+}
+/* form input:focus {
+    border: none; 테두리를 뭘로 사라지게 해야되나..
+} */
